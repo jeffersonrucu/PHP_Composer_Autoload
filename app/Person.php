@@ -70,7 +70,12 @@ class Person
 		$this->gender = $gender;
 	}
 
-	public function __toString()
+	/**
+	 * Get the value of name, age and gender.
+	 *
+	 * @return string
+	 */
+	public function __toString(): string
 	{
 		return "Name: {$this->name}, Age: {$this->age}, Gender: {$this->gender}";
 	}
